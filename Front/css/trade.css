@@ -1,0 +1,159 @@
+/* 아래부터 미들바 */
+.content-bar {
+    display: flex;
+    align-items: center; /* 텍스트와 아이콘 수직 가운데 정렬 */
+    justify-content: space-between; /* 텍스트는 왼쪽, 아이콘 그룹은 오른쪽 정렬 */
+    background: white; /* 배경색 */
+    padding: 10px; /* 내부 여백 */
+    width: 100%; /* 화면 전체 너비 */
+    box-sizing: border-box; /* 패딩 포함한 너비 계산 */
+}
+
+.location-group {
+    display: flex;
+    align-items: center; /* 텍스트와 이미지 수직 가운데 정렬 */
+    gap: 5px; /* 텍스트와 이미지 간 간격 */
+}
+
+/* 텍스트 스타일 */
+.location-text {
+    text-align: left;
+    color: #212025;
+    font-size: 17px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+/* 아이콘 그룹 스타일 */
+.icon-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* 아이콘 스타일 */
+.icon-content {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.icon img {
+    width: 16.99px;
+    height: 18px;
+    position: absolute;
+    top: 3px;
+    left: 3.01px;
+}
+
+/*아래부터 메뉴*/
+/* 컨테이너 스타일 */
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* 아이콘 박스 */
+.icon-box {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+/* 배경 */
+.icon-background {
+    width: 40px;
+    height: 40px;
+    background: #F7F8FA;
+    border-radius: 10px;
+    position: absolute;
+}
+
+/* 줄 아이콘 */
+.icon-lines {
+    position: absolute;
+    left: 14px;
+    top: 15px;
+}
+
+.line {
+    width: 11.5px;
+    height: 1px;
+    background: #212025;
+    margin-bottom: 3px;
+}
+
+/* 원 아이콘 */
+.icon-circle {
+    width: 12px;
+    height: 12px;
+    border: 1.2px solid #212025;
+    border-radius: 50%;
+    position: absolute;
+    left: 14px;
+    top: 15px;
+}
+
+/* 아이콘 텍스트 */
+.icon-text {
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    color: #212025;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/*메뉴*/
+.button-container {
+    position: relative;
+}
+
+.button {
+    height: 40px;
+    position: absolute;
+    background: #F7F8FA;
+    border-radius: 10px;
+}
+
+.button.large {
+    width: 87px;
+    left: 112px;
+    top: 11px;
+}
+
+.button.small {
+    width: 73px;
+    left: 207px;
+    top: 11px;
+}
+
+.button.mini {
+    width: 40px;
+    left: 64px;
+    top: 11px;
+}
+
+.button.mini:nth-child(2) {
+    width: 40px;
+    left: 16px;
+    top: 11px;
+}
+
+.car{
+    width : 12px;
+    height: 10.5px;
+
+    left : 128px;
+    top : 26px;
+}
+
