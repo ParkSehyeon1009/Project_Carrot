@@ -1,0 +1,339 @@
+/* 아래부터 top-bar */
+.time-section {
+    flex: 1;
+    align-self: stretch;
+    padding-top: 1px;
+    border-radius: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-display {
+    width: 54px;
+    height: 20px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.icon-section {
+    width: 77.4px;
+    height: 13px;
+    position: relative;
+}
+
+.battery-icon {
+    width: 27.4px;
+    height: 13px;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.battery-icon img {
+    width: 27.4px;
+    height: 13px;
+}
+
+.signal-icon {
+    width: 17px;
+    height: 11.83px;
+    position: absolute;
+    left: 26px;
+    top: 1px;
+}
+
+.wifi-icon {
+    width: 18px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wifi-icon img {
+    width: 18px;
+    height: 12px;
+}
+
+/* 아래부터 미들바 */
+.content-bar {
+    display: flex;
+    align-items: center; /* 텍스트와 아이콘 수직 가운데 정렬 */
+    justify-content: space-between; /* 텍스트는 왼쪽, 아이콘 그룹은 오른쪽 정렬 */
+    background: white; /* 배경색 */
+    padding: 10px; /* 내부 여백 */
+    width: 100%; /* 화면 전체 너비 */
+    box-sizing: border-box; /* 패딩 포함한 너비 계산 */
+}
+
+.location-group {
+    display: flex;
+    align-items: center; /* 텍스트와 이미지 수직 가운데 정렬 */
+    gap: 5px; /* 텍스트와 이미지 간 간격 */
+}
+
+/* 텍스트 스타일 */
+.location-text {
+    text-align: left;
+    color: #212025;
+    font-size: 17px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+/* 아이콘 그룹 스타일 */
+.icon-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* 아이콘 스타일 */
+.icon-content {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.icon img {
+    width: 16.99px;
+    height: 18px;
+    position: absolute;
+    top: 3px;
+    left: 3.01px;
+}
+
+/* 아래부터 모임일정 */
+/* 가로 스크롤 컨테이너 */
+.box-slider-schedule {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 15px;
+    padding: 0px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.box-slider-schedule::-webkit-scrollbar {
+    display: none;
+}
+
+/* 이미지 컨테이너 */
+.image-container {
+    display: flex;
+    justify-content: center; /* 이미지를 가운데 정렬 */
+    margin-top: 14px; /* BoxSlider와의 간격 */
+}
+
+/* 아래 이미지 스타일 */
+.below-image {
+    max-width: 100%; /* 부모 컨테이너를 초과하지 않도록 설정 */
+    height: auto; /* 원본 비율 유지 */
+    object-fit: unset; /* 기본 비율 유지 */
+}
+
+/* 개별 카드 */
+.schedule-card {
+    flex: 0 0 auto;
+    width: 213px;
+    height: 111px;
+    background: white;
+    border: 1px solid #F2F3F7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+/* 카드 내용 */
+.card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 카드 이미지 */
+.card-image {
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+}
+
+/* 카드 세부 내용 */
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* 카드 제목 */
+.card-title {
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    color: #414141;
+    line-height: 22px;
+}
+
+/* 카드 항목 */
+.card-item {
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    color: black;
+    line-height: 22px;
+}
+
+/*아래부터 모임*/
+/* 박스 슬라이더 */
+.box-slider-group {
+    display: flex;
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+    overflow-y: hidden; /* 세로 스크롤 방지 */
+    gap: 16px; /* 카드 간 간격 */
+    padding: 10px 16px; /* 좌우 여백 */
+    scroll-snap-type: x mandatory; /* 스냅 스크롤 적용 */
+    -webkit-overflow-scrolling: touch; /* 모바일 스크롤 부드럽게 */
+    scrollbar-width: none; /* Firefox에서 스크롤바 숨기기 */
+    -ms-overflow-style: none; /* IE에서 스크롤바 숨기기 */
+    margin-top: 41px;
+}
+
+.box-slider-group::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge에서 스크롤바 숨기기 */
+}
+/* 모임 더보기 버튼 */
+.more-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58px; /* 전체 버튼 너비 고정 */
+    height: auto; /* 높이는 자식 요소에 맞춤 */
+}
+
+.more-image {
+    width: 58px !important; /* 고정 크기 */
+    height: 58px !important; /* 고정 크기 */
+    background: #F2F3F7;
+    border-radius: 10px;
+    position: relative; /* 아이콘 배치를 위한 부모 컨텍스트 */
+    overflow: hidden;
+    flex-shrink: 0; /* 부모 flex 컨텍스트의 크기 변경 방지 */
+}
+
+/* 아이콘 컨테이너 */
+.icons {
+    position: absolute;
+    width: 100%; /* 박스 크기에 맞춤 */
+    height: 100%; /* 박스 크기에 맞춤 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* 아이콘이 박스 크기에 영향을 주지 않도록 */
+}
+
+/* 개별 아이콘 */
+.icon {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.icon-large {
+    width: 22px;
+    height: 22px;
+    top: 5px;
+    left: 5px;
+}
+
+.icon-medium {
+    width: 15px;
+    height: 15px;
+    bottom: 5px;
+    left: 10px;
+}
+
+.icon-small {
+    width: 17px;
+    height: 17px;
+    top: 20px;
+    right: 5px;
+}
+
+/* 모임 더보기 텍스트 */
+.more-text {
+    text-align: center;
+    color: #363636;
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 5px; /* 아이콘 박스와 텍스트 간격 */
+}
+
+/* 모임 리스트 */
+.meeting-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.meeting-card {
+    position: relative;
+    width: 58px;
+    text-align: center;
+}
+
+.meeting-image {
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    right: -5px;
+    background: #FF6F0F;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.meeting-name {
+    margin-top: 8px;
+    color: #363636;
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.advertisement {
+    display: block; /* 인라인 이미지를 블록 요소로 변경 */
+    margin: 20px auto; /* 수평 중앙 정렬 및 위아래 간격 */
+    width: 358px; /* 고정 너비 설정 */
+    height: 85px; /* 고정 높이 설정 */
+    border-radius: 10px; /* 기존 스타일 유지 */
+}
+
