@@ -1,72 +1,3 @@
-/* 아래부터 top-bar */
-.time-section {
-    flex: 1;
-    align-self: stretch;
-    padding-top: 1px;
-    border-radius: 24px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.time-display {
-    width: 54px;
-    height: 20px;
-    text-align: center;
-    color: black;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    line-height: 22px;
-    word-wrap: break-word;
-}
-
-.icon-section {
-    width: 77.4px;
-    height: 13px;
-    position: relative;
-}
-
-.battery-icon {
-    width: 27.4px;
-    height: 13px;
-    position: absolute;
-    left: 50px;
-    top: 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.battery-icon img {
-    width: 27.4px;
-    height: 13px;
-}
-
-.signal-icon {
-    width: 17px;
-    height: 11.83px;
-    position: absolute;
-    left: 26px;
-    top: 1px;
-}
-
-.wifi-icon {
-    width: 18px;
-    height: 12px;
-    position: absolute;
-    left: 0;
-    top: 1px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wifi-icon img {
-    width: 18px;
-    height: 12px;
-}
-
 /* 아래부터 미들바 */
 .content-bar {
     display: flex;
@@ -337,3 +268,76 @@
     border-radius: 10px; /* 기존 스타일 유지 */
 }
 
+/*아래부터 게시글 텍스트*/
+/* 컨테이너: 제목과 더보기 텍스트를 같은 줄에 배치 */
+.board-container {
+    display: flex; /* Flexbox로 정렬 */
+    justify-content: space-between; /* 양 끝에 텍스트 배치 */
+    align-items: center; /* 세로 중앙 정렬 */
+    width: 100%;
+    padding: 0 16px; /* 양쪽에 여백 추가 */
+    box-sizing: border-box; /* 패딩 포함한 너비 계산 */
+}
+
+/* 게시판 제목 스타일 */
+.board-title {
+    color: black;
+    font-size: 17px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    word-wrap: break-word; /* 텍스트 줄바꿈 허용 */
+}
+
+/* 더보기 텍스트와 아이콘 스타일 */
+.board-more {
+    display: flex; /* 텍스트와 아이콘을 한 줄에 배치 */
+    align-items: center; /* 텍스트와 아이콘 수직 중앙 정렬 */
+    color: black;
+    font-size: 13px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+    word-wrap: break-word; /* 텍스트 줄바꿈 허용 */
+}
+
+/* 더보기 아이콘 */
+.more-icon {
+    width: 20px; /* 아이콘 크기 */
+    height: 10px; /* 아이콘 크기 */
+    margin-left: 3px; /* 텍스트와 아이콘 간격 */
+    object-fit: contain; /* 원본 비율 유지하며 축소/확대 */
+    display: block; /* 이미지 블록 요소로 설정 */
+}
+
+/*게시글 목록*/
+.boder-box {
+    width : 356px; /* 너비 설정 */
+    height: 277px; /* 높이 설정 */
+    background: #F2F3F7; /* 배경색 */
+    margin: 0 16px; /* 양쪽에 16px 여백 */
+    margin-top : 10px;
+    box-sizing: border-box; /* 패딩과 보더 포함한 너비 계산 */
+}
+
+/*인기 게시글 목록*/
+.hot_boder-box {
+    width : 356px; /* 너비 설정 */
+    height: 277px; /* 높이 설정 */
+    background: #F2F3F7; /* 배경색 */
+    margin: 0 16px; /* 양쪽에 16px 여백 */
+    margin-top : 10px;
+    box-sizing: border-box; /* 패딩과 보더 포함한 너비 계산 */
+}
+
+/*인기 게시글 타이틀*/
+.hot_board-title {
+    margin-top: 10px;
+    margin-left: 12px;
+    color: black;
+    font-size: 17px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    word-wrap: break-word; /* 텍스트 줄바꿈 허용 */
+}
