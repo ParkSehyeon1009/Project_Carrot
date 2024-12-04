@@ -149,116 +149,74 @@
     top: 11px;
 }
 
-.car{
-    width : 12px;
-    height: 10.5px;
-
-    left : 128px;
-    top : 26px;
+/*게시글*/
+.Slider-container{
+  width : 390px;
+  height : 833px;
+  overflow-y : auto;
+  overflow-x : hidden;
 }
 
-/*게시글*/
-.item-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+.Content-Box{
+  width : 390px;
+  height : 133px;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Content-Image{
+  width : 116px;
+  height : 116px;
+
+  margin-top : 5px;
+  margin-left : 11px;
+}
+
+.Content-Text{
+  position : absolute;
+
+  width : 123px;
+  height: 16px;
   
-  .item-image {
-    width: 107px;
-    height: 107px;
-    position: relative;
-  }
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+
+  margin-top : 13px;
+  margin-left : 139px;
+}
+
+.Content-Price{
+  position : absolute;
+  width : 86px;
+  height: 16px;
+
+  margin-top : 55px;
+  margin-left : 139px;
+}
+
+.page-location-icon{
+  position : absolute;
+
+  width : 11px;
+  height: 12px;
+
+  margin-top : 39px;
+  margin-left : 140px;
+}
+
+.location-Text{
+  position : absolute;
   
-  .item-image-content {
-    width: 116px;
-    height: 116px;
-    position: absolute;
-    left: 25px;
-    top: 165px;
-  }
-  
-  .item-title {
-    width: 123px;
-    height: 16px;
-    color: #212025;
-    font-size: 16px;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    line-height: 18px;
-    word-wrap: break-word;
-  }
-  
-  .item-location {
-    width: 185px;
-    height: 16px;
-  }
-  
-  .distance,
-  .separator,
-  .details {
-    font-size: 13px;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    line-height: 18px;
-    color: #878b94;
-  }
-  
-  .separator {
-    letter-spacing: 1.3px;
-  }
-  
-  .item-like {
-    width: 11px;
-    height: 12px;
-    position: relative;
-  }
-  
-  .like-icon {
-    width: 11px;
-    height: 12px;
-    background: #adb1ba;
-  }
-  
-  .like-circle {
-    width: 4.61px;
-    height: 4.43px;
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    background: white;
-    border-radius: 50%;
-  }
-  
-  .item-price {
-    width: 86px;
-    height: 16px;
-    color: #212025;
-    font-size: 16px;
-    font-family: Inter, sans-serif;
-    font-weight: 700;
-    line-height: 18px;
-    word-wrap: break-word;
-  }
-  
-  .item-likes-count {
-    width: 15px;
-    height: 16px;
-    color: #878b94;
-    font-size: 13px;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    line-height: 18px;
-    word-wrap: break-word;
-  }
-  
-  .item-comment-box {
-    width: 14px;
-    height: 12px;
-    border: 1px solid #878b94;
-  }
-  
+  color: #878B94;
+  font-size : 13px;
+
+  width : 185px;
+  height: 16px;
+
+  margin-top : 36px;
+  margin-left : 154px;
+}
